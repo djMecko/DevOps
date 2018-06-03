@@ -12,6 +12,6 @@ machine:
     - docker run nodevops npm test
  deployment:
   production:
-   branch: /feature_.*/
+   branch: feature_html_change
    commands:
     - sh deployments/qa.sh
