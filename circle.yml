@@ -12,6 +12,6 @@ machine:
     - docker run nodevops npm test
  deployment:
   qa:
-   branch: /feature_.*/
+   branch: master
    commands:
     - sh deployments/qa.sh
