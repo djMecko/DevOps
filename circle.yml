@@ -11,7 +11,7 @@ machine:
   override:
     - docker run nodevops npm test
  deployment:
-  qa:
+  production:
    branch: /feature_.*/
    commands:
     - sh deployments/qa.sh
