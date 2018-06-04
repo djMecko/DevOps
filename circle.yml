@@ -12,6 +12,10 @@ machine:
     - docker run nodevops npm test
  deployment:
   qa:
-   branch: master
+   branch: /feature_.*/
    commands:
     - sh deployments/qa.sh
+  prod:
+   branch: master
+   owner: DjMecko
+   	- sh deployments/prod.sh
